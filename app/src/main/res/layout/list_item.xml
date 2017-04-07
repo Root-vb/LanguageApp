@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:minHeight="@dimen/list_item_height"
+        android:background="@color/tan_background"
+        >
+
+        <ImageView
+            android:id="@+id/list_item_icon"
+            android:layout_width="@dimen/list_item_height"
+            android:layout_height="@dimen/list_item_height" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/different_color"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:orientation="vertical">
+            <TextView
+                android:id="@+id/miwok_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                tools:text="Ek"/>
+            <TextView
+                android:textAppearance="?android:textAppearanceMedium"
+                android:id="@+id/miwok_text_view2"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:textColor="#ffffff"
+                tools:text="One"/>
+
+        </LinearLayout>
+            <ImageView
+                android:src="@drawable/ic_play_circle_outline_white_24dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:scaleType="center"
+                android:layout_height="match_parent"
+                android:paddingRight="16dp"/>
+        </LinearLayout>
+    </LinearLayout>
